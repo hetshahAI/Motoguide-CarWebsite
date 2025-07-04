@@ -61,7 +61,7 @@ This project is licensed under the **GNU General Public License v3.0** (GPL-3.0)
 
 * **Het Shah**
 * GitHub: [@hetshahAI](https://github.com/hetshahAI)
-* LinkedIn: *([HET SHAH LINKDIN PROFILE](https://www.linkedin.com/in/het-shah-aa8b9b26b/))*
+* LinkedIn: *([HET SHAH LINKDIN PROFILE](https://www.linkedin.com/in/hetshah-AI-tech/))*
 
 ---
 
