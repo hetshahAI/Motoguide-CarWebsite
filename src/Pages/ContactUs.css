@@ -1,0 +1,163 @@
+/* General Styles */
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
+.contact-us-container.dark {
+  background: linear-gradient(135deg, #1a1a1a 0%, #121212 100%);
+  color: #e0e0e0;
+}
+
+/* Light Theme */
+.contact-us-container.light {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  color: #1a1a1a;
+}
+
+/* Hero Section */
+.contact-us-hero {
+  text-align: center;
+}
+
+.contact-us-title {
+  font-size: 3rem;
+  color: #ff3d3d;
+  margin-bottom: 1rem;
+}
+
+.contact-us-description {
+  font-size: 1.2rem;
+}
+
+/* Customer Categories Section */
+.contact-us-categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.category-card {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  color: #ff3d3d;
+  margin-bottom: 1rem;
+}
+
+.category-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.category-link {
+  color: #ff3d3d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Details and Form Section */
+.contact-us-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-us-info {
+  flex: 1;
+  max-width: 45%;
+}
+
+.contact-detail {
+  margin-bottom: 1.5rem;
+}
+
+.contact-detail h3 {
+  font-size: 1.2rem;
+  color: #ff3d3d;
+  margin-bottom: 0.5rem;
+}
+
+.contact-detail p {
+  font-size: 1rem;
+}
+
+.contact-us-form {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-us-form.light input,
+.contact-us-form.light textarea {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+.contact-us-form button {
+  padding: 1rem;
+  border: none;
+  background-color: #ff3d3d;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us-form button:hover {
+  background-color: #ff5555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-us-categories {
+    flex-direction: column;
+  }
+
+  .contact-us-details {
+    flex-direction: column;
+  }
+
+  .contact-us-info,
+  .contact-us-form {
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,168 @@
+.brand-cars-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0.8), rgba(190, 224, 224, 0.8));
+}
+
+.brand-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.brand-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #e31837, #ff6b6b);
+  border-radius: 2px;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 1rem;
+}
+
+.car-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  position: relative;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(227, 24, 55, 0.2);
+}
+
+.car-image-container {
+  position: relative;
+  padding-top: 60%;
+  overflow: hidden;
+}
+
+.car-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.car-card:hover .car-image {
+  transform: scale(1.1);
+}
+
+.car-info {
+  padding: 2rem;
+  text-align: left;
+}
+
+.car-name {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.car-price {
+  margin: 0;
+  color: #e31837;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.car-description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.compare-button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(45deg, #e31837, #ff6b6b);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.compare-button:hover {
+  background: linear-gradient(45deg, #ff6b6b, #e31837);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(227, 24, 55, 0.3);
+}
+
+.compare-button:active {
+  transform: translateY(0);
+}
+
+.no-cars-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  .brand-cars-container {
+    padding: 1rem;
+  }
+
+  .brand-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cars-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .car-info {
+    padding: 1.5rem;
+  }
+
+  .car-name {
+    font-size: 1.25rem;
+  }
+
+  .car-price {
+    font-size: 1.1rem;
+  }
+} 

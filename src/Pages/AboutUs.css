@@ -1,0 +1,255 @@
+/* General Styles */
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #121212 100%);
+    color: #e0e0e0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .about-us-container.light {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    color: #1a1a1a;
+  }
+  
+  /* Hero Section */
+  .about-us-hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(100%);
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+  
+  /* Add opaque background for hero text */
+  .hero-content {
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(30, 30, 30, 0.75); /* Opaque dark background */
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    color: #fff; /* Ensure readable text in dark mode */
+  }
+
+  .about-us-container.light .hero-content {
+    background: rgba(255,255,255,0.90);
+    color: #181818; /* Dark text for light background */
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff; /* White for dark, overridden below for light */
+    margin-bottom: 1rem;
+  }
+
+  .about-us-container.light .hero-title {
+    color: #181818;
+  }
+  
+  .hero-subtitle {
+    font-size: 2rem;
+    color: #ff3d3d;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+  }
+
+  .about-us-container.light .hero-description {
+    color: #222;
+  }
+  
+  .hero-phone {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+
+  .about-us-container.light .hero-phone {
+    color: #181818;
+  }
+
+  .hero-button {
+    padding: 1rem 2rem;
+    background-color: #ff3d3d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #ff5555;
+  }
+  
+  /* Light Theme Adjustments */
+  .about-us-container.light .hero-title,
+  .about-us-container.light .hero-description,
+  .about-us-container.light .hero-phone {
+    color: #1a1a1a;
+  }
+  
+  .about-us-container.light .hero-subtitle {
+    color: #ff3d3d;
+  }
+  
+  .about-us-container.light .hero-button {
+    background-color: #ff3d3d;
+  }
+  
+  .about-us-container.light .hero-button:hover {
+    background-color: #ff5555;
+  }
+  
+  /* Add these styles after your existing hero section styles */
+  
+  .about-section {
+    padding: 4rem 2rem;
+    margin-top: -4rem;
+  }
+  
+  .about-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .about-images-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  
+  .about-image-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .about-image-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    color: #ff3d3d;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.95;
+    color: #e0e0e0;
+  }
+
+  .about-us-container.light .about-text {
+    color: #222;
+  }
+  
+  .about-btn {
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #ff3d3d, #ff6666);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 61, 61, 0.3);
+  }
+  
+  .about-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 61, 61, 0.4);
+  }
+  
+  /* Light Theme Adjustments */
+  .about-us-container.light .about-card {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  }
+  
+  .about-us-container.light .about-title {
+    color: #ff3d3d;
+  }
+  
+  .about-us-container.light .about-text {
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .about-card {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .about-images-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-images-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-images-grid {
+      grid-template-columns: 1fr;
+    }
+  }
