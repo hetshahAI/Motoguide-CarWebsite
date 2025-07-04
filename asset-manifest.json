@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Motoguide-CarWebsite/static/css/main.223dc31d.css",
-    "main.js": "/Motoguide-CarWebsite/static/js/main.ffb995a5.js",
+    "main.js": "/Motoguide-CarWebsite/static/js/main.03a1fd27.js",
     "static/media/slick.svg": "/Motoguide-CarWebsite/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Motoguide-CarWebsite/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Motoguide-CarWebsite/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Motoguide-CarWebsite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Motoguide-CarWebsite/index.html",
     "main.223dc31d.css.map": "/Motoguide-CarWebsite/static/css/main.223dc31d.css.map",
-    "main.ffb995a5.js.map": "/Motoguide-CarWebsite/static/js/main.ffb995a5.js.map"
+    "main.03a1fd27.js.map": "/Motoguide-CarWebsite/static/js/main.03a1fd27.js.map"
   },
   "entrypoints": [
     "static/css/main.223dc31d.css",
-    "static/js/main.ffb995a5.js"
+    "static/js/main.03a1fd27.js"
   ]
 }
